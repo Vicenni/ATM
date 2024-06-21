@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craque da semana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .premio{
+        background-image: url(esport.jpg);
+        width: 100vw;
+        height: 150vh;
+        background-position:center;
+        background-repeat: repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .premiodif{
+        background-image: url(esport.jpg);
+        width: 100vw;
+        height: 150vh;
+        background-position:center;
+        background-repeat: repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @media(max-width:768px){
+        .premio{
+        height: 200vh;
+        }
+        .premiodif{
+        height: 200vh;
+        }
+
+    }
+    @media(max-width:500px){
+.premiodif{
+    height: 300vh;
+}
+    }
+@media(max-width:450px){
+.premiodif{
+    height: 500vh;
+}
+
+    }
+       .roboto{
+    
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.8rem;
+}
+       
+    .tex{
+        font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+        text-shadow: 1px 5px 1px salmon;
+        font-size: 2.5rem;
+    }
+
+
+.texto{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ancoraSLIDE{
+    text-decoration: none;
+    color:aliceblue;
+}
+.move{
+    animation: 2s movimento infinite alternate ;
+}
+@keyframes movimento{
+    from{
+        transform: rotateY(0)
+    }to{
+transform: rotateY(180deg);
+    }
+}
+.fotos1{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    align-items: end;
+}
+.content{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    gap: 20px
+}
+.format{
+    margin-inline: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    color: aliceblue;
+    
+}
+
+.formatdif{
+    margin-inline: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    justify-content: center;
+    color: aliceblue;
+    font-weight: bolder;
+}
+.intro{
+    height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+    position: relative;
+}
+.logo{
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#fst{
+    font-family: "Jaro", sans-serif;
+letter-spacing: 2px;
+    color: aliceblue;
+    text-shadow: 1px 1px 1rem white;
+    font-size: 1.5rem;
+    
+}
+#sec{
+    font-family: "Jaro", sans-serif;
+
+    color: aliceblue;
+    text-shadow: 1px 1px 1rem white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+
+}
+.cr7{
+    position: absolute;
+    z-index: -2;
+    height: 100vh;
+    width: 100vw;
+    filter: opacity(100%) brightness(40%);
+}
+.grupo{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    border: 2px solid black;
+    box-shadow: 1px 1px 1rem 1rem white;
+    padding: 2rem;
+border-radius: 20px;    
+}
+.wzl{
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(1px 1px 1rem red);
+    margin-top: 2rem;
+    
+    }
+    .grafic{
+        width: auto; 
+        filter: drop-shadow(1px 1px 6px white);
+    }
+    .imagem{
+        width: auto;
+
+    }
+    @media (max-width:500px){
+        .imagem{
+            width: 70vw;
+        }
+        .formatdif{
+            width: 60vw;
+        }
+    }
+    @media (max-width:400px){
+        .imagem{
+            width: 70vw;
+        }
+        .content{
+            width: 10vw;
+        }
+    }
+    @media(max-width:768px){
+    .format{
+        width: auto;
+        height: auto;
+    }
+        .grafic{
+width: 70vw;
+        }
+
+    
+        
+}
+#box{
+    box-shadow: 1px 1px 1rem 5px white;
+    padding: 1rem;
+    background-color: black;
+    border: 2px solid white;
+    cursor: pointer;
+}
+#box:hover{
+    transform:scale(1.1);
+}
+
+</style>
+<body>
+    <section class="intro">
+        <img src="CR7.jpg" alt="" class="cr7">
+        <div></div>
+        <div class="logo">
+            <div id="fst" ><h1>CRAQUE DA SEMANA</h1></div>
+            <div id="sec">Seja bem-vindo a seleção mais distinta semanalmente</div>
+            <div class="wzl"> <img src="WLZ US.png" alt="" style="height: 10rem;"></div>
+            <div></div>
+        </div>
+    </section>
+    <section class="premiodif">
+        <h1>skak</h1>
+        <div class="grupo">
+        <div style="display: flex;flex-direction: column; justify-content: center; align-items: center;">
+            <h1 class="tex">CRAQUE DA SEMANA <br>VOTAÇÃO ENCERRADA!<br> Dia 03/05/2024 - SEMANA 18</h1>
+            <br>
+        <a class href="https://forms.gle/RJTtd8uEM1hjJUwu8" style="text-decoration: none; color: aliceblue;">https://forms.gle/RJTtd8uEM1hjJUwu8</a>
+        <br>
+
+        </div>
+<div class="content">
+    <div class="format">
+        <img src="de paulo.png" alt="">
+        <br>
+        <h1 class="texto">Tinha a prova de Mege em mãos e escondeu cepa de toda a aesquadrilha  pra virar LCCAER</h1>
+    </div>
+    <div class="format">
+        <img src="jove.png" alt="" style="height: 250px;">
+        <br>
+        <h1 class="texto">Foi citado na PATD do C2 Gabriel José por ter tentado safar ele de uma FOBS e agora tá todo 
+         fudido com o comando do 2º ano(comando mais tranquilo)</h1>
+    </div>
+    <div class="format">
+        <img src="image (6).png" alt="" style="height: 250px; width: auto;">
+        <br>
+        <h1 class="texto">-Augusto e Sathler vararam alvorada <br>-Seguins levantou do nada no cinema <br>-Wanzeler tranco armário
+        com a chave dentro e discutiu com o czao(kini) no telefone</h1>
+    </div>
+</div>
+</div>
+    </section>
+    <section class="premio">
+
+<div>
+    <h1 class="tex"> <span class="move">👑​</span>Vencedor <span class="move">👑​</span>​</h1>
+    <br>
+    <div class="fotos1">
+    <img src="jove.png" alt="" style="filter: drop-shadow(1px 1px 6px white);">
+    <img src="porcentagem bon.png" alt="" class="grafic">
+    </div>
+</div>
+
+    </section>
+    <section class="premio">
+<div class="grupo">
+    <div>
+        <h1 class="tex">CRAQUE DA SEMANA <br>VOTAÇÃO ENCERRADA! <br> Dia 10/05/2024 - SEMANA 19</h1>
+    </div><br>
+
+    <div class="content">
+        <div >
+            <img src="image (7).png" alt="" class="imagem">
+            <br>
+       
+    </div>
+    <br>
+    </div>
+
+
+            </section>
+            <section class="premio">
+
+                <div>
+                    <h1 class="tex"> <span class="move">👑​</span>Vencedor <span class="move">👑​</span>​</h1>
+                    <br>
+                    <div class="fotos1">
+                    <img src="Mamute vencedor.png" alt="" style="filter: drop-shadow(1px 1px 6px white);">
+                    </div>
+                </div>
+                
+                    </section>
+                    <section class="premio">
+                        <div class="grupo">
+                            <div>
+                                <h1 class="tex">CRAQUE DA SEMANA <br>VOTAÇÃO ENCERRADA! <br> Dia 17/05/2024 - SEMANA 20</h1>
+                            </div><br>
+                        
+                            <div class="content">
+                                <div >
+                                    <img src="craque 20.png" alt="" class="imagem">
+                                    <br>
+                               
+                            </div>
+                            <br>
+                            </div>
+                        
+                        
+                                    </section>
+
+                                    
+<section class="premio">
+
+<div>
+    <h1 class="tex"> <span class="move">👑​</span>Vencedor <span class="move">👑​</span>​</h1>
+    <br>
+    <div class="fotos1">
+    <img src="thor.png" alt="" class="grafic">
+    </div>
+</div>
+
+    </section>
+
+                                     <section class="premiodif">
+                                        <div class="grupo">
+                                            <div>
+                                                <h1 class="tex">CRAQUE DA SEMANA <br> <br> Dia 17/05/2024 - SEMANA 20</h1>
+                                            </div><br>
+                                        
+                                            <div class="content">
+                                                <div class="formatdif">
+                                                    <h1>Após 104 votos, 104 análises, 104 observações de conduta, tem-se o tão esperado resultado. Provavelmente a edição mais criticada até hoje, a mais polêmica, que trouxe diversas brigas ideológicas, guerra fria entre cadetes e contestação por parte do público chega ao fim e este é o resultado... O Cadete Thor estreou com vitória embora o Quarto
+                                                        74, mais tradicional e regular na temporada tenha ameaçado seu título até os últimos minutos. Gui Anal e Alpha Charlie travaram sem dúvidas a disputa mais acirrada por um lugar no pódio, brigaram até o final, porém, ambos conseguiram suas medalhas que foram sem dúvida muito merecidas. O cadete Sapão, um dos principais líderes da guerra fria e 
+                                                        das brigas ideológicas mostrou que realmente não merecia figurar entre os principais dessa semana, seus lances não foram tão impressionantes aos olhos do público e acabou então ficando em último lugar, porém, embora dentro de campo não tenha feito muito pela competição, fora de campo gerou bastante relevância, trazendo críticas e conseguindo 
+                                                        apoio de diversos companheiros, então ele foi sim um cadete muito importante para a relevância dessa competição. Semana encerrada, porém a edição SEMANA 21 PROMETE MUITO MAIS. O Cadete Bonitinho, atual líder do quadro de medalhas, vê sua hegemonia ameaçada pelo fato de nem ter conseguido participar nessa semana e para não perder a liderança já vem se destacando ao longo do período analisado e o público já o cita como forte concorrente para semana que vem. Continua...
+                   </h1>
+<br><br>
+                   
+</div>
+<br>
+<div class="formatdif">
+<div id="box">
+
+    <h1>ESCUTE EM ÁUDIO</h1>
+   </div>
+                                
+   <audio src="WhatsApp Ptt 2024-05-18 at 14.59.29 (3) (mp3cut.net) (1).mp3" id="audio"></audio>
+           </div>                    
+     <br>
+     </div>
+                                        
+                                        
+                                                    </section>
+<script>
+    var n = 1
+    car= 2;
+    var caixa = document.getElementById("box")
+    var audio= document.getElementById("audio")
+    caixa.addEventListener('click',function(){
+        n+=1
+console.log(n)
+if(n%car==0){
+    audio.play()
+
+}else{
+    audio.pause()
+
+    audio.currentTime=0
+}
+
+    })
+</script>                                                 
+</body>
+</html>

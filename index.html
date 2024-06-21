@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Craque da galera</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    .screen{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        background-image: linear-gradient(to right,black,46% ,transparent);
+
+    }
+    .imagem_capa{
+        position: relative;
+        z-index: -1;
+        height: 100vh;
+        width: 100vw;
+        
+filter: grayscale(90%) brightness(35%);
+    }
+    .topicos{
+        display: flex;
+        font-size: 0.8rem;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 7rem;
+        flex-direction: row;
+        justify-content:space-evenly;
+        position: absolute ;
+        top: 0;
+        background-color: transparent;
+        backdrop-filter: blur(5px);
+    }
+    .options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px;
+ border: 2px solid white;
+ height: 3rem;
+ width: 10rem;
+ transition: .7s;
+    }
+    .options:hover{
+        box-shadow: 1px 1px 1rem 1px white;
+        background-color: aliceblue;
+    }
+    .options:hover>h1>.vz{
+        color: black;
+    }
+    .options>h1{
+        color: white;
+    }
+    
+    .container{
+        
+        display: flex;
+        position: absolute;
+        align-items: center;
+        transform: translateY(-50%);
+        top: 50%;
+        flex-direction: row;
+        margin-left: 20px;
+       
+    }
+    .up>h1,h2,H3{
+        color: white;
+        margin-top: 10px;
+    }
+    .up>h1{
+        font-size: 3.5rem;
+    }
+    .up>h2{
+        font-size: 1.2rem;
+    }
+    .h3_cor{
+        display: flex;
+        height: 4rem;
+        width: 14rem;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+background-color: #E50914;
+transition: .4s;
+    }
+    .h3_cor:hover{
+filter: opacity(72%);    }
+.art{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px;
+ height: 4rem;
+ width: 8rem;
+ transition: .7s;
+}
+.art>h1{
+    color: rgb(3, 168, 3);
+    text-decoration: line-through;
+}
+.vz{
+    text-decoration: none;
+    color: white;
+}
+</style>
+<body>
+    <div class="screen">
+        <img class="imagem_capa" src="indexbackground.jpg" alt="">
+        <div class="topicos">
+            <div class="art">
+                <h1>ARTEMIS</h1>
+            </div>
+            <div class="options"><h1 ><a href="index.html" class="vz">Home</a></h1>
+            </div>
+            <div class="options ">
+                <h1><a href="about.html" class="vz ">About</a></h1>
+            </div>
+            <div class="options">
+                <h1><a href="loading.html" class="vz">Semanas</a></h1>
+            </div>
+        </div>
+
+       <div class="container">
+        <div class="up">
+<h1>See what's next.</h1>
+<br>
+<h2>WATCH ANYWHERE. CANCEL ANYTIME.</h2>
+<br>
+<div class="h3_cor">
+<h3><a href="loading.html" class="vz">SEE THE SELECTION</a></h3>
+</div>
+        </div>
+        <div class="mid">
+           
+        </div>
+        <div class="bot">
+
+        </div>
+       </div>
+    </div>
+</body>
+
+</html>

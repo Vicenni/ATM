@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="SMuSew0z1_pAKTvurcxNS1G4VhlzDT67-XzujVy9rLU" />
+    <meta name="norton-safeweb-site-verification" content="LQ3GFGXMRWDME27674Q03WXBJBWZ7OCR-18UXFCKBWSC8Y-4G41LQJQBZK93U4OYNQF61M8YAU0-UG53PA3D57J7AB6C9TBQ700RY3J0018X6PUIXLF39C4177T7A45H" />
+    <title>Craque da galera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    .fundo{
+        position: absolute;
+        z-index: -1;
+        height: 100vh;
+        width: 100vw;
+
+        
+    }
+    .container{
+        position: relative;
+        height: 190vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        background-image: linear-gradient(to right,black,56% ,transparent);
+
+    }
+    .up{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+        justify-content: left;
+        gap: 20px;
+        align-items: center;
+        width: 100vw;
+        height: 4rem;
+        background: linear-gradient(to bottom ,black 25%,transparent);
+    }
+    
+    .upOP{
+        font-size: 0.48rem;
+        color: white;
+    }
+    .upOP:hover{
+        filter: opacity(72%);    
+
+    }
+    .vz{
+        color: white;
+        text-decoration: none;
+    }
+    .art{
+        color: rgb(1, 155, 1);
+        text-decoration: line-through;
+    }
+    .catálogo{
+        position: relative;
+        top: 25%;
+        transform: translateY(-25%);
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-left: 1rem;
+        color: white;
+    }
+    .catálogo>h1{
+font-size: 3rem;
+    }
+    .spani{
+        font-family: "Jersey 25 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+    }
+    .Catálogo_2{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 20px;
+    }
+ .assist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    width: 10rem;
+    height: 3rem;
+margin-top: 3rem;
+font-size: 0.8rem;
+
+
+ }
+ .assist:hover{
+    filter: opacity(72%);    }
+
+ 
+ .assist_vz{
+    color: black;
+    text-decoration: none;
+ }
+ .info_vz{
+    color: white;
+    text-decoration: none;
+ }
+ .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #575755;
+    color: black;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    width: 16rem;
+    height: 3rem;
+margin-top: 3rem;
+ }
+.info:hover{
+        filter: opacity(72%);    }
+
+    
+.roll_1{
+    padding-top: 2rem;
+    height: 35vh;
+    background-color: #141414;
+    background: linear-gradient(to bottom,transparent,#131312 60%);
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20%;
+    color: white;
+}
+.roll_2{
+    height: 40vh;
+    background-color: #141414;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20%;
+    color: white;
+}
+.roll_3{
+    height: 40vh;
+    background-color: #141414;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 40%;
+    color: white;
+}
+.roll{
+    
+    height: auto;
+    width: 100vw;
+flex-shrink: 0;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+.roll::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+
+.options{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid black;
+    height: 8rem;
+    width: 14rem;
+    min-width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+    border-radius: 10px;
+
+}
+.options>h1{
+    color: black;
+}
+.definition{
+    padding-left: 1rem;
+    color: white;
+    font-size: 0.8rem;
+    top: 60%;
+    position: absolute;
+    display: none;
+    background-color: black;
+    height: 8rem;
+    width: 14rem;
+}
+a{
+    text-decoration: none;
+}
+.s1{
+    background-image: url(jove.png);
+background-position: left 10%;
+}
+.options:hover{
+    box-shadow: 1px 1px 1rem 1px black;
+    transform: scale(1.1);
+    height: 16rem;
+}
+.options:hover>.definition{
+   display: flex;
+}
+
+.s2{
+    background-image: url(Mamute\ vencedor.png);
+background-position: left 20%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.s3{
+    background-image: url(thor.png);
+background-position: left 35%;
+}
+.s4{
+   background-image: url(mais\ bobin.png); 
+   background-position: left 60%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.s5{
+    background-image: url(nhaes.png); 
+   background-position: left 90%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.s6{
+    background-image: url(wzl.png); 
+   background-position: left 90%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.s10{
+    background-image: url(logo\ eam\ art.png); 
+   
+background-position: center;
+background-size: cover;
+}
+
+.s11{
+    background-image: url(2\ eia.png);
+      
+background-position: center;
+background-size: cover;
+}
+
+@media(max-width:550px){
+    .up{
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container{
+     height: 250vh;
+
+    }
+    .fundo{
+        height: 120vh;
+        width: 120vw;
+        overflow-x: hidden;
+    }
+    .assist{
+        font-size: 0.6rem;
+        width: 12rem;
+        height: 4rem;
+    }
+    .info{
+        font-size: 0.6rem;
+        height: 4rem;
+        width: 12rem;
+    }
+    .Catálogo_2{
+        gap: 10px;
+    }
+    .roll_1{
+        height: 50vh;
+    }
+    .roll_2{
+        height: 50vh;
+    }
+}
+@media(max-width:1200px) and  (min-width:550px){
+.container{
+    height: 195vh;
+}
+}
+</style>
+<body>
+    <div class="container">
+        <img src="indexbackground.jpg" alt="" class="fundo">
+        <div class="up">
+<div class="art"> <h1> Ártemis
+</h1></div>
+<div class="upOP">
+    <a href="index.html" class="vz"><h1>Início</h1></a>
+</div>
+<div class="upOP">
+    <a href="netcraque.html" class="vz"><h1>Séries</h1></a>
+
+</div>
+<br>
+<div class="upOP">
+    <a href="netcraque.html" class="vz"><h1>Filmes</h1></a>
+
+</div>
+<div class="upOP">
+    <a href="netcraque.html" class="vz"><h1>Bombando</h1></a>
+
+</div>
+<div class="upOP">
+    <a href="" class="vz" id="list" onclick="list()"><h1>Minha lista</h1></a>
+
+</div>
+<br>
+<div class="upOP">
+    <a href="" class="vz" id="idiomas" onclick="idiomas()"><h1> Navegar por idiomas</h1></a>
+
+</div>
+        </div>
+        <div class="catálogo">
+<h1><span style="color: rgb(1, 155, 1);text-decoration: line-through;">A</span> series</h1>
+<br>
+<H1 class="spani">Grupamentos 
+Que valem ouro</H1>
+<br>
+<h3>Veja todas as semanas disponíveis até agora.</h3>
+<br>
+<h4>Indivíduos que rendem feitos lendários que geram boas lembranças e risadas <br> 
+veja agora e relembre todos esses momentos!</h4>
+
+<div class="Catálogo_2">
+    <div class="assist">
+        <a href="" class="assist_vz"> <h1>▶️ Assistir</h1></a>
+    </div>
+    <div class="info">
+        <a href="" class="info_vz"><h1><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" 
+            fill="white"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 
+            28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 
+            156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg> Mais informações</h1></a>
+    </div>
+</div>
+        </div>
+        
+        <div class="roll_1">
+            <h1>Quais serão as próximas semanas?
+                
+    
+            </h1>
+            <br>
+            <div class="roll">
+            
+            <a href="fr.html"><div class="options s1">
+                <div class="definition">
+                    <h1>▶️ ➕ 👍 <br>
+
+                        semana 1
+                        <br> <span style="color: green;font-size: 1rem">100% relevante</span>
+                    </h1>
+
+                </div>
+            </div></a>
+            <a href="sec.html"><div class="options s2">
+                <div class="definition">
+                    <h1>▶️ ➕ 👍 <br>
+
+                        semana 2
+                        <br> <span style="color: green;font-size: 1rem">100% relevante</span>
+                    </h1>
+
+                </div>
+            </div></a>
+            <a href="third.html"><div class="options s3">
+                <div class="definition">
+                    <h1>▶️ ➕ 👍 <br>
+
+                        semana 3
+                        <br> <span style="color: green;font-size: 1rem">100% relevante</span>
+                    </h1>
+
+                </div>
+            </div></a>
+            <a href="fourth.html"><div class="options s4">
+                <div class="definition">
+                    <h1>▶️ ➕ 👍 <br>
+
+                        semana 4
+                        <br> <span style="color: green;font-size: 1rem">100% relevante</span>
+                    </h1>
+
+                </div>
+            </div></a>
+            <a href="fifth.html"><div class="options s5">
+                <div class="definition">
+                    <h1>▶️ ➕ 👍 <br>
+
+                        semana 5
+                        <br> <span style="color: green;font-size: 1rem">100% relevante</span>
+                    </h1>
+
+                </div>
+            </div></a>
+            <a href=""><div class="options s6">
+                <div class="definition">
+                    <h1>▶️ ➕ 👍 <br>
+
+                        semana 6
+                        <br> <span style="color: red;font-size: 1rem">Não disponível</span>
+                    </h1>
+
+                </div>
+            </div></a>
+            <a href=""><div class="options s7">
+                <div class="definition">
+                    <h1>▶️ ➕ 👍 <br>
+
+                        semana 7
+                        <br> <span style="color: red;font-size: 1rem">Não disponível</span>
+                    </h1>
+
+                </div>
+            </div></a>
+            <a href=""><div class="options s8">
+                <div class="definition">
+                    <h1>▶️ ➕ 👍 <br>
+
+                        semana 8
+                        <br> <span style="color: red;font-size: 1rem">Não disponível</span>
+                    </h1>
+
+                </div>
+            </div></a>
+            <a href=""><div class="options s9">
+                <div class="definition">
+                    <h1>▶️ ➕ 👍 <br>
+
+                        semana 9
+                        <br> <span style="color: red;font-size: 1rem">Não disponível</span>
+                    </h1>
+
+                </div>
+            </div></a>
+
+        </div>
+        </div>
+        
+        <div class="roll_2">
+            <h1> Estágio de Adaptação Militar
+                
+    
+            </h1>
+            <br>
+            <div class="roll">
+            
+            <a href="Academia da Força Aérea - Estágio de Adaptação Militar 2022 (2).mp4"><div class="options s10">
+                <div class="definition">
+                    <h1>▶️ ➕ 👍 <br>
+
+                        EAM
+                        <br> <span style="color: green;font-size: 1rem">100% relevante</span>
+                    </h1>
+
+                </div>
+                </div>
+                </a>
+
+    </div>
+    </div>
+    <h1> 
+                
+    
+    </h1>
+    
+    <div class="roll_2">
+        <h1> 2º EIA ÁRTEMIS </h1>
+        
+    <div class="roll">
+    
+    <a href="2º EIA 2023 - Turma Ártemis.mp4"><div class="options s11">
+        <div class="definition">
+            <h1>▶️ ➕ 👍 <br>
+
+                2ºEIA
+                <br> <span style="color: green;font-size: 1rem">100% relevante</span>
+            </h1>
+
+        </div>
+        </div>
+        </a>
+
+</div>
+</div>
+    </div>
+</body>
+<script>
+    let toq1 = document.getElementById("list")
+    let toq2 = document.getElementById("idiomas") 
+    let toq3 = document.getElementById("")
+
+    function list(){
+        alert("Sua lista já esta bem exposta abaixo!")
+    }
+    function idiomas(){
+        alert("Você é gringo?")
+    }
+</script>
+
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="SMuSew0z1_pAKTvurcxNS1G4VhlzDT67-XzujVy9rLU" />
+    <meta name="norton-safeweb-site-verification" content="LQ3GFGXMRWDME27674Q03WXBJBWZ7OCR-18UXFCKBWSC8Y-4G41LQJQBZK93U4OYNQF61M8YAU0-UG53PA3D57J7AB6C9TBQ700RY3J0018X6PUIXLF39C4177T7A45H" />
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    .screen{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        background-image: linear-gradient(to right,black,46% ,transparent);
+
+    }
+    .imagem_capa{
+        position: relative;
+        z-index: -1;
+        height: 100vh;
+        width: 100vw;
+        
+filter: grayscale(90%) brightness(35%);
+    }
+    .topicos{
+        display: flex;
+        font-size: 0.8rem;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 7rem;
+        flex-direction: row;
+        justify-content:space-evenly;
+        position: absolute ;
+        top: 0;
+        background-color: transparent;
+        backdrop-filter: blur(5px);
+    }
+    .options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px;
+ border: 2px solid white;
+ height: 3rem;
+ width: 10rem;
+ transition: .7s;
+    }
+    .options:hover{
+        box-shadow: 1px 1px 1rem 1px white;
+        background-color: aliceblue;
+    }
+    .options:hover>h1>.vz{
+        color: black;
+    }
+    .options>h1{
+        color: white;
+    }
+    
+    .container{
+        
+        display: flex;
+        position: absolute;
+        align-items: center;
+        transform: translateY(-50%) translateX(-50%);
+        top: 50%;
+        left: 50%;
+        flex-direction: row;
+        margin-left: 20px;
+       
+    }
+    .up>h1,h2,H3{
+        color: white;
+        margin-top: 10px;
+    }
+    .up>h1{
+        font-size: 3.5rem;
+    }
+    .up>h2{
+        font-size: 1.2rem;
+    }
+    .h3_cor{
+        display: flex;
+        height: 4rem;
+        width: 14rem;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+background-color: #E50914;
+transition: .4s;
+    }
+    .h3_cor:hover{
+filter: opacity(72%);    }
+.art{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px;
+ height: 4rem;
+ width: 8rem;
+ transition: .7s;
+}
+.art>h1{
+    color: rgb(3, 168, 3);
+    text-decoration: line-through;
+}
+.vz{
+    text-decoration: none;
+    color: white;
+}
+@media(max-width:680px){
+    .screen{
+        height: 140vh;
+    }
+    .imagem_capa{
+        height: 140vh;
+    }
+    .options{
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+}
+</style>
+<body>
+    <div class="screen">
+        <img class="imagem_capa" src="indexbackground.jpg" alt="">
+        <div class="topicos">
+            <div class="art">
+                <h1>ARTEMIS</h1>
+            </div>
+            <div class="options"><h1 ><a href="index.html" class="vz">Home</a></h1>
+            </div>
+            <div class="options">
+                <h1><a href="about.html" class="vz">About</a></h1>
+            </div>
+            <div class="options">
+                <h1><a href="netcraque.html" class="vz">Semanas</a></h1>
+            </div>
+        </div>
+
+       <div class="container">
+        <div class="up">
+<h2><span style="color: rgb(3, 168, 3);">Artflix</span> é um serviço online de streaming Brasileiro lançado em 2024 e é disponível em mais de 190 países. É operado pela empresa de mídia over-the-top de mesmo nome, sendo sua sede localizada em Pirassununga, São Paulo. <br>
+     A empresa, fundada em 2024, oferecia no início um serviço de entrega de imagens pelo hangouts, e quando houve a expansão do streaming no Brasil a partir de junho de 2024, ela adaptou-se e passou a investir nessa área do meio digital. <br>
+    Sua primeira websérie original de sucesso foi Craque da Galera, lançada em 2024. Em junho de 2024,a <span style="color: rgb(3, 168, 3);">Artflix</span>  superou a marca de 232 milhões de assinantes globalmente e atualmente é uma das empresas de serviço de streaming mais bem sucedidas do mundo.</h2>
+<br>
+</div>
+        </div>
+        <div class="mid">
+           
+        </div>
+        <div class="bot">
+
+        </div>
+       </div>
+    </div>
+</body>
+<script>
+    let toq1 = document.getElementById("list")
+    let toq2 = document.getElementById("idiomas") 
+    let toq3 = document.getElementById("")
+
+    function list(){
+        alert("Sua lista já esta bem exposta abaixo!")
+    }
+    function idiomas(){
+        alert("Você é gringo?")
+    }
+</script>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="SMuSew0z1_pAKTvurcxNS1G4VhlzDT67-XzujVy9rLU" />
+    <meta name="norton-safeweb-site-verification" content="LQ3GFGXMRWDME27674Q03WXBJBWZ7OCR-18UXFCKBWSC8Y-4G41LQJQBZK93U4OYNQF61M8YAU0-UG53PA3D57J7AB6C9TBQ700RY3J0018X6PUIXLF39C4177T7A45H" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap" rel="stylesheet">
+</head>
+<style>
+     *{
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    .fundo{
+        position: absolute;
+        z-index: -1;
+        height: 200vh;
+        width: 200vw;
+        overflow-x: hidden;
+        
+    }
+    .container{
+        position: relative;
+        height: 200vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        background-image: linear-gradient(to right,black,56% ,transparent);
+
+    }
+    .up{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        width: 100vw;
+        height: 4rem;
+        background: linear-gradient(to bottom ,black 25%,transparent);
+    }
+    .upOP:hover{
+        filter: opacity(72%);    
+
+    }
+    .upOP{
+        font-size: 0.5rem;
+        color: white;
+    }
+    .vz{
+        color: white;
+        text-decoration: none;
+    }
+    .art{
+        color: rgb(1, 155, 1);
+        text-decoration: line-through;
+    }
+    .catálogo{
+        position: relative;
+        top: 25%;
+        transform: translateY(-25%);
+        justify-content: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+        color: white;
+    }
+    .catálogo>h1{
+font-size: 3rem;
+    }
+    .spani{
+        
+        font-family: "Jersey 25 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+    }
+    .Mamute{
+        height: 40vh;
+        max-width: 40vw;
+        background-position: center;
+    }
+    .craque{
+        height: 70vh;
+    }
+    @media(max-width:510px){
+        .craque{
+            
+            width: 80vw;
+            height: auto;
+        }
+        .up{
+            height: 8vh;
+        }
+    }
+    
+</style>
+<body>
+    
+    <div class="container">
+        <img src="indexbackground.jpg" alt="" class="fundo">
+        <div class="up">
+<div class="art"> <h1> Ártemis
+</h1></div>
+<div class="upOP">
+    <a href="index.html" class="vz"><h1>Início</h1></a>
+</div>
+<div class="upOP">
+    <a href="netcraque.html" class="vz"><h1>Séries</h1></a>
+
+</div>
+<br>
+<div class="upOP">
+    <a href="netcraque.html" class="vz"><h1>Filmes</h1></a>
+
+</div>
+<div class="upOP">
+    <a href="netcraque.html" class="vz"><h1>Bombando</h1></a>
+
+</div>
+<div class="upOP">
+    <a href="netcraque.html" class="vz" id="list" ><h1>Minha lista</h1></a>
+
+</div>
+<br>
+<div class="upOP">
+    <a href="" class="vz" id="idiomas" onclick="idiomas()"><h1> Navegar por idiomas</h1></a>
+
+</div>
+        </div>
+        <div class="catálogo">
+            <h1><span style="color: rgb(1, 155, 1);text-decoration: line-through;">A</span> series</h1>
+            <br>
+            <H1 class="spani">Grupamentos 
+            Que valem ouro
+        </H1>
+        <br>
+        <H1 class="spani">SEMANA 19
+        </H1>
+            <br> <br>
+            <h3>Chega a semana 19, e, como sempre, temos alguns cadetes que se destacaram ao longo dela. Desta vez 4 cadetes concorrem ao prêmio... <br>
+                 Será que Bonitinho mantém o cinturão da categoria? Será que alguém o alcança em número de títulos? Será que alguém o alcança em número do participações?<br>   
+                 Teremos alguma nova revelação? Embora toda a ansiedade, a verdade é que só o Esquadrão Ártemis poderá dizer quem irá vencer. Sendo assim, está aberta a votação! <br>
+                  Eaí, quem será o CRAQUE DA GALERA da semana 19?</h3>
+            <br>
+           <img src="image (8).png" alt="" class="craque">
+           <br>
+           <h2>Vencedor:</h2>
+          
+           <br>
+           <img src="Mamute vencedor.png" alt="" class="Mamute">
+            
+</body>
+<script>
+    let toq1 = document.getElementById("list")
+    let toq2 = document.getElementById("idiomas") 
+    let toq3 = document.getElementById("")
+
+    function list(){
+        alert("Sua lista já esta bem exposta abaixo!")
+    }
+    function idiomas(){
+        alert("Você é gringo?")
+    }
+</script>
+</html>
